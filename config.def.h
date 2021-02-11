@@ -13,7 +13,7 @@ static const char normbgcolor[]     = "#222222";
 static const char normbordercolor[] = "#444444";
 static const char normfgcolor[]     = "#bbbbbb";
 static const char selfgcolor[]      = "#eeeeee";
-static const char selbordercolor[]  = "#c4bd69";
+static const char selbordercolor[]  = "#45357c";
 static const char selbgcolor[]      = "#45357c";
 static const char *colors[][3]      = {
 	/*               fg           bg       	   border   */
