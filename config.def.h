@@ -77,7 +77,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_slash,  spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
+	{ MODKEY,                       XK_dollar,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      spawn,          {.v = browsercmd } },
 	{ MODKEY|ShiftMask,             XK_h,      spawn,          {.v = handlercmd } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
@@ -111,15 +111,15 @@ static Key keys[] = {
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
+	TAGKEYS(                        XK_ampersand,              0)
+	TAGKEYS(                        XK_bracketleft,             1)
+	TAGKEYS(                        XK_braceleft,              2)
+	TAGKEYS(                        XK_braceright,             3)
+	TAGKEYS(                        XK_parenleft,              4)
+	TAGKEYS(                        XK_equal,                  5)
+	TAGKEYS(                        XK_asterisk,               6)
+	TAGKEYS(                        XK_parenright,             7)
+	TAGKEYS(                        XK_plus,                   8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
