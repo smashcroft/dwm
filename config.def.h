@@ -109,10 +109,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Right,  shiftview,      {.i = +1 } },
     { MODKEY,                       XK_Left,   shiftview,      {.i = -1 } },
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
-	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
+	{ MODKEY,                       XK_at,     setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	TAGKEYS(                        XK_ampersand,              0)
-	TAGKEYS(                        XK_bracketleft,             1)
+	TAGKEYS(                        XK_bracketleft,            1)
 	TAGKEYS(                        XK_braceleft,              2)
 	TAGKEYS(                        XK_braceright,             3)
 	TAGKEYS(                        XK_parenleft,              4)
