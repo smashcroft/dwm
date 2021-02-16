@@ -29,9 +29,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class       instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",      NULL,       NULL,       0,            1,            -1 },
-	{ "lightcord", NULL,       NULL,       1 << 6,       0,             1 },
+	/* class                   instance    title       tags mask     isfloating   monitor */
+	{ "Gimp",                  NULL,       NULL,       0,            1,            -1 },
+	{ "gnome-calculator",      NULL,       NULL,       0,            1,            -1 },
+	{ "lightcord",             NULL,       NULL,       1 << 6,       0,             1 },
 };
 
 /* layout(s) */
@@ -68,6 +69,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[]  = { "chromium", NULL };
 static const char *handlercmd[]  = { "handler", NULL };
+static const char *calccmd[]  = { "gnome-calculator", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 
@@ -79,6 +81,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_dollar,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      spawn,          {.v = browsercmd } },
+	{ MODKEY,                       XK_c,      spawn,          {.v = calccmd } },
 	{ MODKEY|ShiftMask,             XK_h,      spawn,          {.v = handlercmd } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
